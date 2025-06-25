@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Checkout source repo
         uses: actions/checkout@v3
+        
+      - name: 🔍 Debug secrets
+        run: echo "REMOTE=${{ secrets.TARGET_REPO }}"
 
       - name: Push to target repo
         run: |
