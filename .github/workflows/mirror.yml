@@ -21,4 +21,4 @@ jobs:
       - name: 🚀 Push to prainglobal repo
         run: |
           git remote add target "${{ secrets.TARGET_REPO }}"
-          git push --force target HEAD:${{ secrets.TARGET_BRANCH }}"
+          git push --force target HEAD:${{ secrets.TARGET_BRANCH }}
